@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+
+header{
+    background-image: url("zomato-background-image.avif");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    height: 72px;
+    align-items: center;
+}
+
+#getTheApp span a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#nav-menu ul{
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.nav-links{
+   text-decoration: none;
+   color: #fff;
+}
+
+/* .........nav complete here......... */
+
+#nameTagSearch{
+    /* border: 5px solid red; */
+    display:flex;
+    height: calc(60vh - 72px);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#Name-logo{
+    /* border: 5px solid blue; */
+    height: 60px;
+    width: 300px;
+}
+
+#nameTagSearch  #Name-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#Tag-Line{
+    margin-top: 30px;
+}
+
+#Tag-Line h1{
+    color:#fff;
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 500;
+}
+
+#Tag-Line h1 span{
+    font-weight: 600;
+    line-height: 48px;
+}
+
+#search-container{
+    margin-top: 30px;
+    /* border: 5px solid violet; */
+    display: flex;
+    background-color: #fff;
+    height: 54px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    align-items: center;
+    width: 50%;
+    padding: 0 15px;    
+}
+
+#search-container #location{
+    border-right: 2px solid #cfcfcf;
+    padding-right: 10px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#search-container #location input{
+    border: none;
+    margin: 0 19px 0 10px;
+    
+}
+
+#search-container #location input::placeholder{
+    font-size: 14px;
+    font-weight: 450;
+}
+
+#search-container #restaurant{
+    /* border: 5px solid red; */
+    width: 530px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#search-container #restaurant input{
+    border: none;
+    margin-left: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#search-container #restaurant input::placeholder{
+    font-size: 14px;
+    font-weight: 450;
+}
+
+/* .............header complete here......... */
+
+#main-body{
+    width: 100%;
+    margin: 0 auto 100px;
+    max-width: 1100px;
+    /* border: 5px solid green; */
+    
+}
+
+#services{
+    /* border: 5px solid red; */
+    width: 100%; 
+    height: 240px;
+    display:flex;
+    gap: 20px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+#info{    
+    /* border: 5px solid blue ; */
+    height: 100%;
+    width: 100%;
+    max-width: 33.33%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+
+}
+
+#info-image{
+    width: 100%;
+    height: 100%;
+}
+
+#info-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+#info-content{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    border: 2px solid #eee;
+    padding:10px 20px 16px 20px;
+    line-height: 30px;
+}
+
+#info-content h3{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #363636;
+}
+
+#info-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4f4f4f;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+/* .............services complete here......... */
+
+#collection h2{
+    font-size: 36px;
+    line-height: 43.2px;
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+#col-description{
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    
+}
+
+#col-description p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #363636;
+}
+
+#col-description a{
+    text-decoration: none;
+    color: #ef4f5f;
+    font-size: 16px;
+}
+
+#col-list{
+    display: flex;
+    gap:10px;
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    height: 320px;
+}
+
+#col-option{
+    height: 100%;
+    width: 100%;
+    max-width: 25%;
+    position: relative;
+}
+
+#col-list-image{
+    height: 100%;
+    width: 100%;
+}
+
+#col-list-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+#col-list-info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+}
+
+#col-list-full-info{
+    position: absolute;
+    bottom: 0;
+    padding: 0 16px 10px 16px;
+}
+
+#col-list-full-info p{
+    color: #fff;
+}
+
+#col-list-full-info h6{
+    color: #fff;
+    text-decoration: none;
+}
+
+#col-list-full-info h6 a{
+    color: #fff;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* .............collection complete here......... */
+
+#location-title span{
+    font-weight: 600;
+}
+
+#location-title p{
+    font-size: 36px;
+    color: #363636;
+    margin-bottom: 40px;
+}
+
+#place-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#places{
+    bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 32%;
+    margin-bottom: 10px;
+    box-shadow: #1c1c1c14 0px 1.42623px 2.85246px;
+}
+
+#place-name h5{
+    font-size: 20px;
+    color: #1c1c1c;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#place-name p{
+    font-size: 16px;
+    color: #363636;
+    font-weight: 400;
+}
+
+#see-more{
+    border: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 32%;
+    margin-bottom: 10px;
+}
+
+#see-more P{
+    margin-right: 10px;
+}
+
+/* .............location complete here......... */
+
+#app-section{
+    background-color: #fffbf7;
+    padding-top: 30px;
+}
+
+#app-container{
+    width: 100%;
+    max-width: 950px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app-image{
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+#app-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#app-info{
+    width: 50%;
+    margin-left: 20px;
+}
+
+#app-title h2{
+    font-size: 44px;
+    color: #1c1c1c;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#app-title p{
+    font-size: 16px;
+    color: #363636;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 32px;
+}
+
+#app-options{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+input[type="radio"]{
+    accent-color: #EF4F5F;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;  
+}
+
+label{
+    font-size: 16px;
+    color: #1c1c1c;
+}
+
+#email-input-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#email-input{
+    width: 100%;
+    padding: 13px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+}
+
+#email-input-container button{
+    min-width: 150px;
+    border: none;
+    background-color: #ef4f5f;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+#store p{
+    font-size: 14px;
+    color: #9c9c9c;
+    margin-bottom: 15px;
+}
+
+#store-image{
+    display: flex;
+    gap: 20px;
+}
+
+#store-image img{
+    width: 137px;
+}
+
+
+/* .............app complete here......... */
+
+#options{
+    /* border: 5px solid red; */
+    width: 100%;
+    margin: 50px auto 50px;
+    max-width: 1100px;
+    background-color: #fcfcfc;
+}
+
+#option-heading{
+    /* border: 5px solid red; */
+    margin-bottom: 20px;
+}
+
+#option-heading p{
+    font-size: 30px;
+    line-height: 40px;
+    color: #363636;
+    font-weight: 600;
+}
+
+
+#option-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#option-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid #f4f4f4;
+    padding: 20px 24px;
+    background-color: #fff;
+}
+
+#option-list h5{
+    font-size: 20px;
+    line-height: 26px;
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+
+
+/* .............options complete here......... */
+
+footer{
+    background-color: #f8f8f8;
+    padding: 48px 0 22px;
+}
+
+#footer-container{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+#footer-logo img{
+    width: 132px;
+}
+
+#dropdown-container{
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown-item{
+    border: 1px solid #b5b5b5;
+    border-radius: 6px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+}
+
+/* .................................... */
+
+#footer-middle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links h6{
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.footer-links ul{
+    list-style-type: none;
+    font-size: 14px;
+    color: #1c1c1c;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+#social-links{
+    margin-right: 40px;
+}
+
+#social-links i{
+    margin-right: 10px;
+}
+
+#download-app{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#download-app img{
+    width: 137px;
+}
+
+#footer-container hr{
+    margin-top: 50px;
+}
+
+/* .................................... */
+
+#footer-end p{
+    font-size: 13px;
+    color: #4f4f4f;
+    line-height: 17px;
+    margin-top: 23px;
+}
